@@ -1,0 +1,97 @@
+
+s2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 229, 267
+  size: 146, 234
+  orig: 146, 234
+  offset: 0, 0
+  index: -1
+deco
+  rotate: false
+  xy: 368, 65
+  size: 82, 46
+  orig: 82, 46
+  offset: 0, 0
+  index: -1
+skin/Group 1 copy
+  rotate: false
+  xy: 150, 90
+  size: 113, 173
+  orig: 113, 173
+  offset: 0, 0
+  index: -1
+skin/Group 2
+  rotate: false
+  xy: 368, 33
+  size: 70, 30
+  orig: 70, 30
+  offset: 0, 0
+  index: -1
+skin/Layer 118 copy 4
+  rotate: true
+  xy: 493, 462
+  size: 39, 10
+  orig: 39, 10
+  offset: 0, 0
+  index: -1
+skin3/body
+  rotate: false
+  xy: 2, 265
+  size: 225, 236
+  orig: 225, 236
+  offset: 0, 0
+  index: -1
+skin3/wing_r
+  rotate: false
+  xy: 377, 302
+  size: 114, 199
+  orig: 114, 199
+  offset: 0, 0
+  index: -1
+skin_noel/body
+  rotate: false
+  xy: 2, 24
+  size: 146, 239
+  orig: 146, 239
+  offset: 0, 0
+  index: -1
+skin_noel/deco
+  rotate: false
+  xy: 380, 113
+  size: 85, 65
+  orig: 85, 65
+  offset: 0, 0
+  index: -1
+skin_noel/tail
+  rotate: true
+  xy: 265, 40
+  size: 96, 101
+  orig: 96, 101
+  offset: 0, 0
+  index: -1
+skin_noel/wing
+  rotate: false
+  xy: 265, 138
+  size: 113, 127
+  orig: 113, 127
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 150, 19
+  size: 89, 69
+  orig: 89, 69
+  offset: 0, 0
+  index: -1
+wing
+  rotate: false
+  xy: 380, 180
+  size: 113, 120
+  orig: 113, 120
+  offset: 0, 0
+  index: -1

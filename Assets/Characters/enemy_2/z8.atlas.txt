@@ -1,0 +1,55 @@
+
+z8.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 162, 178
+  size: 56, 71
+  orig: 56, 71
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 2
+  size: 53, 36
+  orig: 53, 36
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 70, 100
+  size: 8, 12
+  orig: 8, 12
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: false
+  xy: 96, 167
+  size: 6, 8
+  orig: 6, 8
+  offset: 0, 0
+  index: -1
+outerglow
+  rotate: false
+  xy: 2, 114
+  size: 92, 135
+  orig: 92, 135
+  offset: 0, 0
+  index: -1
+wing1
+  rotate: false
+  xy: 2, 40
+  size: 66, 72
+  orig: 66, 72
+  offset: 0, 0
+  index: -1
+wing2
+  rotate: false
+  xy: 96, 177
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1

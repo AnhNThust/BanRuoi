@@ -1,0 +1,62 @@
+
+z3.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 45, 48
+  orig: 45, 48
+  offset: 0, 0
+  index: -1
+deco
+  rotate: false
+  xy: 49, 8
+  size: 23, 25
+  orig: 23, 25
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 71, 40
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+foot
+  rotate: false
+  xy: 49, 35
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+leg
+  rotate: false
+  xy: 106, 53
+  size: 10, 8
+  orig: 10, 8
+  offset: 0, 0
+  index: -1
+outerglow
+  rotate: false
+  xy: 2, 52
+  size: 67, 74
+  orig: 67, 74
+  offset: 0, 0
+  index: -1
+pupil
+  rotate: false
+  xy: 106, 63
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+wing
+  rotate: false
+  xy: 71, 75
+  size: 44, 51
+  orig: 44, 51
+  offset: 0, 0
+  index: -1

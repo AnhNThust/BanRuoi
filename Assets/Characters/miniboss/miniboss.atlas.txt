@@ -1,0 +1,160 @@
+
+miniboss.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 79
+  rotate: false
+  xy: 522, 397
+  size: 124, 105
+  orig: 124, 105
+  offset: 0, 0
+  index: -1
+Group 82
+  rotate: true
+  xy: 1248, 754
+  size: 266, 292
+  orig: 266, 292
+  offset: 0, 0
+  index: -1
+Group 83
+  rotate: false
+  xy: 356, 131
+  size: 111, 101
+  orig: 111, 101
+  offset: 0, 0
+  index: -1
+arm1
+  rotate: true
+  xy: 1542, 861
+  size: 159, 285
+  orig: 159, 285
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: false
+  xy: 1058, 585
+  size: 159, 269
+  orig: 159, 269
+  offset: 0, 0
+  index: -1
+arm3
+  rotate: true
+  xy: 571, 504
+  size: 137, 167
+  orig: 137, 167
+  offset: 0, 0
+  index: -1
+arm4
+  rotate: true
+  xy: 1219, 590
+  size: 162, 228
+  orig: 162, 228
+  offset: 0, 0
+  index: -1
+arm5
+  rotate: true
+  xy: 2, 2
+  size: 199, 335
+  orig: 199, 335
+  offset: 0, 0
+  index: -1
+arm6
+  rotate: false
+  xy: 749, 856
+  size: 497, 164
+  orig: 497, 164
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 203
+  size: 352, 399
+  orig: 352, 399
+  offset: 0, 0
+  index: -1
+egg
+  rotate: false
+  xy: 395, 643
+  size: 352, 377
+  orig: 352, 377
+  offset: 0, 0
+  index: -1
+egg 2
+  rotate: false
+  xy: 2, 604
+  size: 391, 416
+  orig: 391, 416
+  offset: 0, 0
+  index: -1
+glass
+  rotate: true
+  xy: 1765, 651
+  size: 158, 180
+  orig: 158, 180
+  offset: 0, 0
+  index: -1
+gun rocket
+  rotate: true
+  xy: 1542, 652
+  size: 207, 221
+  orig: 207, 221
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 740, 489
+  size: 122, 136
+  orig: 122, 136
+  offset: 0, 0
+  index: -1
+head gun
+  rotate: false
+  xy: 356, 234
+  size: 140, 147
+  orig: 140, 147
+  offset: 0, 0
+  index: -1
+head gun arm
+  rotate: false
+  xy: 1449, 685
+  size: 69, 67
+  orig: 69, 67
+  offset: 0, 0
+  index: -1
+head2
+  rotate: true
+  xy: 749, 613
+  size: 241, 307
+  orig: 241, 307
+  offset: 0, 0
+  index: -1
+l arm
+  rotate: true
+  xy: 1829, 811
+  size: 209, 212
+  orig: 209, 212
+  offset: 0, 0
+  index: -1
+l arm2
+  rotate: true
+  xy: 395, 528
+  size: 113, 174
+  orig: 113, 174
+  offset: 0, 0
+  index: -1
+l hand
+  rotate: false
+  xy: 878, 493
+  size: 116, 118
+  orig: 116, 118
+  offset: 0, 0
+  index: -1
+rocket
+  rotate: false
+  xy: 356, 383
+  size: 164, 143
+  orig: 164, 143
+  offset: 0, 0
+  index: -1

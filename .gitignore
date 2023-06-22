@@ -1,0 +1,13 @@
+﻿.vscode
+Library
+UserSettings
+.idea
+*.csproj
+*.sln
+*.user
+.vsconfig
+Logs
+Temp
+.vs
+obj
+BanRuoi

@@ -1,0 +1,41 @@
+
+12 han.png
+size: 200,200
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 62
+  size: 95, 136
+  orig: 95, 136
+  offset: 0, 0
+  index: -1
+canh3
+  rotate: false
+  xy: 99, 80
+  size: 81, 118
+  orig: 81, 118
+  offset: 0, 0
+  index: -1
+canh4
+  rotate: true
+  xy: 2, 16
+  size: 44, 104
+  orig: 44, 104
+  offset: 0, 0
+  index: -1
+chan3
+  rotate: false
+  xy: 108, 46
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+eye2
+  rotate: false
+  xy: 108, 2
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1

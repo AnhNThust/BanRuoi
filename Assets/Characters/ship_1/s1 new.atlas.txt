@@ -1,0 +1,139 @@
+
+s1 new.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 266, 221
+  size: 89, 210
+  orig: 89, 210
+  offset: 0, 0
+  index: -1
+deco
+  rotate: true
+  xy: 83, 6
+  size: 79, 92
+  orig: 79, 92
+  offset: 0, 0
+  index: -1
+hand
+  rotate: true
+  xy: 83, 204
+  size: 79, 150
+  orig: 79, 150
+  offset: 0, 0
+  index: -1
+power
+  rotate: false
+  xy: 151, 89
+  size: 110, 113
+  orig: 110, 113
+  offset: 0, 0
+  index: -1
+skin_2/Group 2
+  rotate: false
+  xy: 481, 357
+  size: 26, 59
+  orig: 26, 59
+  offset: 0, 0
+  index: -1
+skin_2/Group 3
+  rotate: true
+  xy: 2, 3
+  size: 51, 49
+  orig: 51, 49
+  offset: 0, 0
+  index: -1
+skin_2/Layer 13
+  rotate: false
+  xy: 478, 244
+  size: 32, 66
+  orig: 32, 66
+  offset: 0, 0
+  index: -1
+skin_2/Layer 14
+  rotate: true
+  xy: 478, 227
+  size: 15, 31
+  orig: 15, 31
+  offset: 0, 0
+  index: -1
+skin_2/Layer 17
+  rotate: false
+  xy: 481, 312
+  size: 25, 43
+  orig: 25, 43
+  offset: 0, 0
+  index: -1
+skin_2/body_2
+  rotate: false
+  xy: 2, 285
+  size: 262, 223
+  orig: 262, 223
+  offset: 0, 0
+  index: -1
+skin_3/arm_l_3
+  rotate: false
+  xy: 83, 87
+  size: 66, 115
+  orig: 66, 115
+  offset: 0, 0
+  index: -1
+skin_3/body3
+  rotate: true
+  xy: 266, 312
+  size: 104, 213
+  orig: 104, 213
+  offset: 0, 0
+  index: -1
+skin_3/deco_l_3
+  rotate: true
+  xy: 177, 8
+  size: 79, 92
+  orig: 79, 92
+  offset: 0, 0
+  index: -1
+skin_3/deco_r_3
+  rotate: false
+  xy: 371, 12
+  size: 79, 92
+  orig: 79, 92
+  offset: 0, 0
+  index: -1
+skin_3/power_3
+  rotate: false
+  xy: 263, 106
+  size: 110, 113
+  orig: 110, 113
+  offset: 0, 0
+  index: -1
+skin_noel/body
+  rotate: true
+  xy: 266, 418
+  size: 90, 238
+  orig: 90, 238
+  offset: 0, 0
+  index: -1
+skin_noel/deco
+  rotate: true
+  xy: 271, 2
+  size: 102, 98
+  orig: 102, 98
+  offset: 0, 0
+  index: -1
+skin_noel/hand
+  rotate: false
+  xy: 2, 56
+  size: 79, 163
+  orig: 79, 163
+  offset: 0, 0
+  index: -1
+skin_noel/power
+  rotate: false
+  xy: 375, 106
+  size: 110, 113
+  orig: 110, 113
+  offset: 0, 0
+  index: -1

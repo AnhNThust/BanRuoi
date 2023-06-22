@@ -1,0 +1,48 @@
+
+1.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 96
+  size: 160, 146
+  orig: 160, 146
+  offset: 0, 0
+  index: -1
+canh3
+  rotate: false
+  xy: 2, 2
+  size: 126, 92
+  orig: 126, 92
+  offset: 0, 0
+  index: -1
+canh4
+  rotate: false
+  xy: 400, 122
+  size: 106, 120
+  orig: 106, 120
+  offset: 0, 0
+  index: -1
+chan copy 4
+  rotate: false
+  xy: 130, 17
+  size: 54, 77
+  orig: 54, 77
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 290, 120
+  size: 108, 122
+  orig: 108, 122
+  offset: 0, 0
+  index: -1
+mau
+  rotate: false
+  xy: 164, 116
+  size: 124, 126
+  orig: 124, 126
+  offset: 0, 0
+  index: -1

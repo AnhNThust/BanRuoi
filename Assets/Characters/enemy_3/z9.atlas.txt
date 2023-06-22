@@ -1,0 +1,55 @@
+
+z9.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+head
+  rotate: false
+  xy: 107, 25
+  size: 35, 18
+  orig: 35, 18
+  offset: 0, 0
+  index: -1
+leg
+  rotate: false
+  xy: 107, 8
+  size: 5, 15
+  orig: 5, 15
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: false
+  xy: 187, 114
+  size: 18, 12
+  orig: 18, 12
+  offset: 0, 0
+  index: -1
+leg3
+  rotate: false
+  xy: 187, 101
+  size: 4, 11
+  orig: 4, 11
+  offset: 0, 0
+  index: -1
+outer glow
+  rotate: false
+  xy: 2, 2
+  size: 103, 124
+  orig: 103, 124
+  offset: 0, 0
+  index: -1
+stomath
+  rotate: false
+  xy: 107, 45
+  size: 78, 81
+  orig: 78, 81
+  offset: 0, 0
+  index: -1
+teeth
+  rotate: false
+  xy: 144, 33
+  size: 7, 10
+  orig: 7, 10
+  offset: 0, 0
+  index: -1
