@@ -28,6 +28,8 @@
 		// ===== For Enemy =====
 		public const int ENEMY1_BULLET = 21;
 		public const int ENEMY2_BULLET = 22;
+		public const int ENEMY3_BULLET = 23;
+		public const int ENEMY4_BULLET = 24;
 
 		public const int ROCKET_MINI = 25;
 		public const int ROCKET = 26;
@@ -36,6 +38,7 @@
 		public const int LIGHTNING_1 = 29;
 		public const int ENEMY_WAVE_BULLET = 30;
 		public const int FIRE_RAY = 200;
+		public const int ENEMY_SPECIAL_BULLET_1 = 401;
 	}
 	public class ItemID
 	{
@@ -86,5 +89,15 @@
 
 		// ====== Targeting =========
 		public const int TARGETING = 80;
+
+		// ====== Open Dimension ======
+		public const int LIGHTING_22 = 90;
+
+		// ====== Dimension Gate ======
+		public const int GREEN_HOLE = 201;
+
+		// ====== Notification ======
+		public const int ALERT_ATTACK = 210;
+		public const int ALERT_ATTACK_MINI = 211;
 	}
 }

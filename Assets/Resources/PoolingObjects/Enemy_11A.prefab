@@ -131,8 +131,9 @@ GameObject:
   - component: {fileID: 2424254935520676754}
   - component: {fileID: 2424254935520676753}
   - component: {fileID: 2424254935520676756}
-  - component: {fileID: 8402710620236929306}
   - component: {fileID: -6119390105680412296}
+  - component: {fileID: 3076138150735916752}
+  - component: {fileID: 1590069110308756594}
   m_Layer: 0
   m_Name: Enemy_11A
   m_TagString: Enemy
@@ -149,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 2424254935520676748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.54, y: -0.24, z: 0}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2424254937083251698}
@@ -208,23 +209,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 143
   instanceID: 0
---- !u!114 &8402710620236929306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2424254935520676748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecac5a9b1ff7eca4787c015b97d1df0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeMove: 6
-  bodyTransform: {fileID: 1458843004525687508}
-  ringEfx: {fileID: 0}
-  healEfx: {fileID: 0}
-  attack: {fileID: 0}
 --- !u!114 &-6119390105680412296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,8 +227,38 @@ MonoBehaviour:
   itemID: 0
   explosionId: 0
   hitId: 0
+  controller: {fileID: 0}
   currentHp: 100
   totalHp: 100
+--- !u!114 &3076138150735916752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424254935520676748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 159b613af6c93834c9eab15c60124ad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 1458843004525687508}
+  currentHp: 0
+  totalHp: 0
+  effects: []
+--- !u!114 &1590069110308756594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424254935520676748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3ed2432095b364aabf092cbe026247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyProperties: {fileID: 0}
   isReady: 0
 --- !u!1 &2424254937083251697
 GameObject:

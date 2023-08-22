@@ -11,14 +11,18 @@ public class EnemyDamageReceiverTest : MonoBehaviour
 	public int explosionId;
 	public int hitId;
 
+	[SerializeField] private EnemyControllerTest controller;
 	[SerializeField] private float currentHp;
 	[SerializeField] private float totalHp;
-	public bool isReady = false;
+	//[SerializeField] private bool isReady;
 
-	private Transform _target;
+	//private Transform _target;
 
 	public float CurrentHp { get => currentHp; set => currentHp = value; }
 	public float TotalHp { get => totalHp; set => totalHp = value; }
+	public EnemyControllerTest Controller { get => controller; set => controller = value; }
+
+	//public bool IsReady { get => isReady; set => isReady = value; }
 
 	private void Start()
 	{
@@ -27,6 +31,7 @@ public class EnemyDamageReceiverTest : MonoBehaviour
 
 	private void OnEnable()
 	{
+		Controller = GetComponent<EnemyControllerTest>();
 		hpTransform = transform.GetChild(0);
 		hpRender = transform.GetChild(0).GetComponent<SpriteRenderer>();
 
@@ -38,12 +43,12 @@ public class EnemyDamageReceiverTest : MonoBehaviour
 
 	private void Update()
 	{
-		_target = GetComponent<EnemyMovementTest>().Target;
+		//_target = GetComponent<SpecialEnemyMovement>().Target;
 
-		if (_target != null && transform.position == _target.position)
-		{
-			isReady = true;
-		}
+		//if (_target != null && transform.position == _target.position)
+		//{
+		//	isReady = true;
+		//}
 
 		if (CurrentHp <= 0)
 		{
@@ -66,7 +71,7 @@ public class EnemyDamageReceiverTest : MonoBehaviour
 		{
 			float damage = collision.GetComponent<BulletDamageSender>().damage;
 
-			if (isReady)
+			if (Controller.IsReady)
 			{
 				TakeDamage(damage);
 			}

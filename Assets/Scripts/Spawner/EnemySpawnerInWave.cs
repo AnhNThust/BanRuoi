@@ -7,83 +7,90 @@ using Random = UnityEngine.Random;
 
 public class EnemySpawnerInWave : MonoBehaviour
 {
-    public Transform[] listItem;
-    public DOTweenPath path;
-    public Transform holder;
-    public Transform group;
+	public Transform[] listItem;
+	public DOTweenPath path;
+	public Transform holder;
+	public Transform group;
+	[SerializeField] private CheckHolder checkHolder;
 
-    public float timeSpawn;
-    public int numSpawn;
-    private int counter = 0;
-    [SerializeField] private int enemyId;
+	public float timeSpawn;
+	public int numSpawn;
+	private int counter = 0;
+	[SerializeField] private int enemyId;
 
-    public int numberItemSpawn;
-    public int[] listIndexHaveItem;
-    private Stack<Transform> listPoint;
+	public int numberItemSpawn;
+	public int[] listIndexHaveItem;
+	private Stack<Transform> listPoint;
 
 	private void Start()
-    {
-        listPoint = TakeListTarget(group);
-        listIndexHaveItem = CreateListIndexHasItem();
-        StartCoroutine(Spawn());
-    }
+	{
+		checkHolder = GetComponentInParent<CheckHolder>();
+		listPoint = TakeListTarget(group);
+		listIndexHaveItem = CreateListIndexHasItem();
 
-    /// <summary>
-    /// Spawn from 2 position
-    /// </summary>
-    /// <returns></returns>
-    private IEnumerator Spawn()
-    {
-        while (counter < numSpawn)
-        {
-            yield return new WaitForSeconds(timeSpawn);
-            var enemyClone = PoolingManager.GetObject(enemyId, transform.position, Quaternion.identity);
-            enemyClone.transform.SetParent(holder);
-            enemyClone.SetActive(true);
+		StartCoroutine(Spawn());
+	}
 
-            if (listIndexHaveItem.Contains(counter))
-            {
-                var itemClone = GetRandomItem();
-                enemyClone.GetComponent<EnemyDamageReceiver>().itemPrefab = itemClone;
-            }
+	/// <summary>
+	/// Spawn from 2 position
+	/// </summary>
+	/// <returns></returns>
+	private IEnumerator Spawn()
+	{
+		while (counter < numSpawn)
+		{
+			yield return new WaitForSeconds(timeSpawn);
+			var enemyClone = PoolingManager.GetObject(enemyId, transform.position, Quaternion.identity);
+			enemyClone.transform.SetParent(holder);
+			enemyClone.SetActive(true);
 
-            enemyClone.GetComponent<EnemyMovement>().path = path;
-            enemyClone.GetComponent<EnemyMovement>().SetInfo(listPoint.Pop());
+			if (listIndexHaveItem.Contains(counter))
+			{
+				var itemClone = GetRandomItem();
+				enemyClone.GetComponent<EnemyDamageReceiver>().itemPrefab = itemClone;
+			}
 
-            counter++;
-        }
-    }
+			enemyClone.GetComponent<EnemyMovement>().path = path;
+			enemyClone.GetComponent<EnemyMovement>().SetInfo(listPoint.Pop());
 
-    private int[] CreateListIndexHasItem()
-    {
-        var listIndex = new int[numberItemSpawn];
-        var index = 0;
-        while (index < numberItemSpawn)
-        {
-            var randIndex = Random.Range(0, numSpawn - 1);
+			// Enable Check Holder
+			if (!checkHolder.enabled && counter == numSpawn - 1)
+				checkHolder.enabled = true;
 
-            if (listIndex.Contains(randIndex)) continue;
-            listIndex[index] = randIndex;
-            index++;
-        }
+			counter++;
+		}
+	}
 
-        return listIndex;
-    }
+	private int[] CreateListIndexHasItem()
+	{
+		var listIndex = new int[numberItemSpawn];
+		var index = 0;
+		while (index < numberItemSpawn)
+		{
+			var randIndex = Random.Range(0, numSpawn - 1);
 
-    private Transform GetRandomItem()
-    {
-        var randIndex = Random.Range(0, listItem.Length - 1);
-        return listItem[randIndex];
-    }
+			if (listIndex.Contains(randIndex)) continue;
+			listIndex[index] = randIndex;
+			index++;
+		}
 
-    private Stack<Transform> TakeListTarget(Transform pGroup)
-    {
-        var lstPoint = new Stack<Transform>();
-        for (var i = 0; i < pGroup.childCount; i++)
-        {
-            lstPoint.Push(pGroup.GetChild(i));
-        }
+		return listIndex;
+	}
 
-        return lstPoint;
-    }
+	private Transform GetRandomItem()
+	{
+		var randIndex = Random.Range(0, listItem.Length - 1);
+		return listItem[randIndex];
+	}
+
+	private Stack<Transform> TakeListTarget(Transform pGroup)
+	{
+		var lstPoint = new Stack<Transform>();
+		for (var i = 0; i < pGroup.childCount; i++)
+		{
+			lstPoint.Push(pGroup.GetChild(i));
+		}
+
+		return lstPoint;
+	}
 }

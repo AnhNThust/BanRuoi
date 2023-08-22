@@ -120,10 +120,10 @@ TextureImporter:
       name: Ship1_Icon
       rect:
         serializedVersion: 2
-        x: 407
-        y: 108
-        width: 72
-        height: 71
+        x: 398
+        y: 103
+        width: 91
+        height: 81
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: Ship4_Icon
       rect:
         serializedVersion: 2
-        x: 453
-        y: 770
-        width: 86
-        height: 58
+        x: 447
+        y: 762
+        width: 103
+        height: 76
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: Ship2_Icon
       rect:
         serializedVersion: 2
-        x: 455
-        y: 578
-        width: 76
-        height: 72
+        x: 449
+        y: 570
+        width: 87
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,12 +183,12 @@ TextureImporter:
       name: Ship3_Icon
       rect:
         serializedVersion: 2
-        x: 573
-        y: 358
-        width: 72
-        height: 72
+        x: 566
+        y: 352
+        width: 85
+        height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -3,9 +3,13 @@ using UnityEngine;
 
 public class CheckHolder : MonoBehaviour
 {
+	[SerializeField] private Transform player;
+
 	public Transform holder;
 	public Transform nextWave;
 	public int waveNumber;
+
+	public Transform Player { get => player; set => player = value; }
 
 	private void Start()
 	{
@@ -25,6 +29,10 @@ public class CheckHolder : MonoBehaviour
 					UIManager.ShowWaveText(waveNumber);
 					yield return new WaitForSeconds(2f);
 					GameManager.CallWave(nextWave);
+				}
+				else if (waveNumber == 0)
+				{
+					player.GetComponent<ShipEnd>().enabled = true;
 				}
 				else
 				{

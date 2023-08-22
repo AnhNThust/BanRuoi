@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6054271105742908515}
   - component: {fileID: 6054271105742908540}
   - component: {fileID: 7483165527543006425}
-  - component: {fileID: 400266779656034284}
+  - component: {fileID: -1425862321874559486}
+  - component: {fileID: -2898727207555958033}
   m_Layer: 0
   m_Name: Enemy_8
   m_TagString: Enemy
@@ -107,10 +108,10 @@ MonoBehaviour:
   itemID: 0
   explosionId: 0
   hitId: 0
-  currentHp: 100
-  totalHp: 100
-  isReady: 1
---- !u!114 &400266779656034284
+  controller: {fileID: 0}
+  currentHp: 25
+  totalHp: 25
+--- !u!114 &-1425862321874559486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,14 +120,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 6054271105742908516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecac5a9b1ff7eca4787c015b97d1df0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 159b613af6c93834c9eab15c60124ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeMove: 3.5
-  bodyTransform: {fileID: 9142596293749090308}
-  ringEfx: {fileID: 0}
-  healEfx: {fileID: 0}
-  attack: {fileID: 0}
+  body: {fileID: 9142596293749090308}
+  currentHp: 0
+  totalHp: 0
+  effects: []
+--- !u!114 &-2898727207555958033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6054271105742908516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3ed2432095b364aabf092cbe026247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyProperties: {fileID: 0}
+  isReady: 0
 --- !u!1 &6054271106067062780
 GameObject:
   m_ObjectHideFlags: 0

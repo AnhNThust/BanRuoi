@@ -8,18 +8,25 @@ public class UIManager : MonoBehaviour
 {
 	private static UIManager instance;
 
+	[Header("Icon and Text")]
 	public TextMeshProUGUI scoreText;
 	public TextMeshProUGUI waveText;
-	public Transform uiWarning;
+	public Transform warningAlert;
 	public TextMeshProUGUI lifeText;
+	public Transform[] bulletLevelUI;
+	[SerializeField] private Transform[] buttons;
+
+	[Header("Panel")]
 	public Transform vicPanel;
 	public Transform defPanel;
-	public Transform[] bulletLevelUI;
+	[SerializeField] private Transform pausePanel;
+
+	[Header("Scene")]
 	public string nameCurrentScene;
 	public string nameNextScene;
+	[SerializeField] private string nameMenuScene;
 
 	public ShipController shipController;
-
 	private int blLevel;
 	private int score;
 	private int life;
@@ -53,7 +60,7 @@ public class UIManager : MonoBehaviour
 
 	private void ShowWarningUIBase()
 	{
-		uiWarning.gameObject.SetActive(true);
+		warningAlert.gameObject.SetActive(true);
 	}
 
 	private void UpdateLifeBase(int pLife)
@@ -64,12 +71,21 @@ public class UIManager : MonoBehaviour
 
 	private void ShowVicPanelBase()
 	{
+		ActiveButton(false);
 		vicPanel.gameObject.SetActive(true);
 	}
 
 	private void ShowDefPanelBase()
 	{
+		ActiveButton(false);
 		defPanel.gameObject.SetActive(true);
+	}
+
+	private void ShowPausePanelBase()
+	{
+		ActiveButton(false);
+		Time.timeScale = 0;
+		pausePanel.gameObject.SetActive(true);
 	}
 
 	public void ReplayGame()
@@ -78,10 +94,22 @@ public class UIManager : MonoBehaviour
 		SceneManager.LoadScene(nameCurrentScene);
 	}
 
+	public void ContinueGame()
+	{
+		Time.timeScale = 1.0f;
+		pausePanel.gameObject.SetActive(false);
+		ActiveButton(true);
+	}
+
 	public void NextMap()
 	{
 		Time.timeScale = 1;
 		SceneManager.LoadScene(nameNextScene);
+	}
+
+	public void BackToMenu()
+	{
+		SceneManager.LoadScene(nameMenuScene);
 	}
 
 	private void NextBulletLevel()
@@ -113,6 +141,14 @@ public class UIManager : MonoBehaviour
 		shipController.ShipTakeItem.ChangeShip(id, BulletID.SHIP4_BULLET);
 	}
 
+	private void ActiveButton(bool flag)
+	{
+		for (int i = 0; i < buttons.Length; i++)
+		{
+			buttons[i].gameObject.SetActive(flag);
+		}
+	}
+
 	// ===================================
 	public static void AddScore(int pScore)
 	{
@@ -142,6 +178,11 @@ public class UIManager : MonoBehaviour
 	public static void ShowDefPanel()
 	{
 		instance.ShowDefPanelBase();
+	}
+
+	public static void ShowPausePanel()
+	{
+		instance.ShowPausePanelBase();
 	}
 
 	public static int GetLife()

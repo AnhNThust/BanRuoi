@@ -4878,7 +4878,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8029229545610485255}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &709835942001465710
 ParticleSystem:
@@ -9703,7 +9703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92083d46f9e82648aeaf4d605298229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotateSpeed: 5
+  rotateSpeed: 5
 --- !u!1 &1267986181536530271
 GameObject:
   m_ObjectHideFlags: 0
@@ -9767,7 +9767,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8029229545610485255}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8824519826732356614
 MeshFilter:
@@ -9982,9 +9982,10 @@ GameObject:
   - component: {fileID: 8029229545610485254}
   - component: {fileID: 8029229545610485259}
   - component: {fileID: 5569052703304600038}
-  - component: {fileID: 7929932236183832882}
   - component: {fileID: 207201291103284003}
-  - component: {fileID: 3812548674579712891}
+  - component: {fileID: -5314084974849441822}
+  - component: {fileID: -5222879557089799812}
+  - component: {fileID: 7560626571381950414}
   m_Layer: 0
   m_Name: Enemy_9A
   m_TagString: Enemy
@@ -10005,8 +10006,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8029229545136357566}
-  - {fileID: 709835942001465696}
   - {fileID: 8630458836310517990}
+  - {fileID: 709835942001465696}
   - {fileID: 921357637}
   - {fileID: 2649877159368219485}
   - {fileID: 884908582529744008}
@@ -10082,26 +10083,9 @@ MonoBehaviour:
   itemID: 0
   explosionId: 0
   hitId: 0
+  controller: {fileID: 0}
   currentHp: 150
   totalHp: 150
-  isReady: 0
---- !u!114 &7929932236183832882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8029229545610485251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecac5a9b1ff7eca4787c015b97d1df0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeMove: 5
-  bodyTransform: {fileID: 8630458836310517990}
-  ringEfx: {fileID: 709835942001465696}
-  healEfx: {fileID: 921357637}
-  attack: {fileID: 0}
 --- !u!114 &207201291103284003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10118,21 +10102,52 @@ MonoBehaviour:
   timeCheck: 2
   ps: {fileID: 709835942001465710}
   hpHeal: 15
---- !u!114 &3812548674579712891
+--- !u!114 &-5314084974849441822
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8029229545610485251}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd72888eb16d56c40b9a5b7cf6a5211c, type: 3}
+  m_Script: {fileID: 11500000, guid: 159b613af6c93834c9eab15c60124ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barrel1: {fileID: 2649877159368219485}
-  barrel2: {fileID: 884908582529744008}
-  timeSpawn: 0.3
+  body: {fileID: 8630458836310517990}
+  currentHp: 0
+  totalHp: 0
+  effects:
+  - {fileID: 709835942001465696}
+  - {fileID: 921357637}
+--- !u!114 &-5222879557089799812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8029229545610485251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3ed2432095b364aabf092cbe026247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyProperties: {fileID: 0}
+  isReady: 0
+--- !u!114 &7560626571381950414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8029229545610485251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9800f2dfe7feb8f40917f2a2f8048655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effects: []
+  controller: {fileID: 0}
 --- !u!1 &8897195519087373534
 GameObject:
   m_ObjectHideFlags: 0
